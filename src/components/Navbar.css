@@ -1,0 +1,119 @@
+/* General Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ff9800; /* Warm food color */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar.scrolled {
+    background-color: #e68900; /* Slightly darker shade on scroll */
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  /* Logo on the Right */
+  .logo {
+    margin-left: auto; /* Pushes logo to the right */
+    margin-right: auto; /* Pushes logo to the left */;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-right: auto; /* Pushes logout to the left */
+  }
+  
+  .nav-links a, .auth-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover, .auth-link:hover {
+    color: #fff3e0; /* Light creamy hover effect */
+  }
+  
+  .auth-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Mobile Menu Button */
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #ff9800;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .mobile-menu.open {
+    display: flex;
+  }
+  
+  .mobile-menu a, .mobile-menu .auth-link {
+    display: block;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .mobile-menu .auth-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  }
+  

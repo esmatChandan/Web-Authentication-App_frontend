@@ -1,0 +1,133 @@
+/* Cart Styles */
+.cart-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 70vh;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    align-items: center;
+    background: white;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  
+  .item-details {
+    flex-grow: 1;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .quantity-control button {
+    padding: 0.25rem 0.5rem;
+    min-width: 2rem;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .remove-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cart-summary {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .total {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: #e67a00;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .checkout-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .order-confirmation {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f0f8ff;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    background: #ffebee;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .empty-cart button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #e67a00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .cart-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .item-details {
+      width: 100%;
+    }
+  }
